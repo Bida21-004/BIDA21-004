@@ -1,0 +1,179 @@
+html{
+  height: 100%;
+}
+body {
+  background: #1a1a1a;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+  .nav{
+    height: 45px;
+    margin-top: 0%;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #071524;
+    }
+    .nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 15px;
+    position: relative;
+    }
+    .nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: verdana;
+    }
+    .nav ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 1s;
+    }
+    .nav ul li:hover::after{
+    width: 100%;
+    }
+    .logo{
+      float: left;
+      margin-right: 100px;
+    }
+  
+    .search{
+      float: right;
+      background: transparent;
+      border-radius: 60px;
+      margin-right: 20px;
+      margin-top: 10px;
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .search input{
+      background: transparent;
+      outline: none;
+      border: 0px;
+      padding: 5px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      padding-top: 8px;
+    }
+    ::placeholder{
+      color: #f44336;
+    }
+    .button{
+      color: #f44336;
+      float: right;
+      border-radius: 50%;
+      background: transparent;
+      display: flex;
+      border: none;
+      margin: 10px 10px ;
+    }
+        h1{
+          font-size: 35px;
+          font-family: fantasy;
+          text-align: center;
+          color: #f44336;
+          margin-top: 15px;
+          }
+          p{
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: #fff;
+            }
+          .column{
+           
+            height:500px;
+            padding: 10px 10px 0px 80px;
+            margin: 10px 10px 10px 0px;
+            background: transparent;
+            }
+            .img-container{
+              border: #f44336 solid;
+              width: 140px;
+              height: 200px;
+              float: left;
+              padding: 10px;
+              margin: 10px 20px 0px 10px;
+              background: #071524;
+              
+            }
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+          }
+          .social{
+            width: 180px;
+        }
+        .social i{
+            font-size: 15px;
+            margin: 10px;
+            cursor: pointer;
+        }
+          .footer {
+            width: 100%;
+            padding: 0px;
+            font-size: 10px;
+            text-align: center;
+            background: #071524;
+            margin-top: 45px;
+            clear: both;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #fff;
+            display: flex;
+            margin: auto;
+          }
+          .col-1{
+            width: 200px;
+            margin-right: 180px;
+            margin-left: 80px;
+          }
+  
+          .col-1 a{
+            display: block;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            color: #fff;
+            margin-bottom: 5px;
+          }
+  
+          .footer div h1{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 0px;
+        }
+  
+          .col-2{
+            width: 450px;
+            margin-right: 180px;
+            padding-top: 10px;
+          }
+          @media screen and (max-width: 800px){
+            .row{
+              width: 100%;
+              padding: 0;
+          }
+          .nav a{
+          float: none;
+          width: 100%;
+        }
+          }
+          @media screen and (max-width: 400px) {
+            .nav a {
+              float: none;
+              width: 100%;
+            }
+            .row{
+              width: 100%;
+              padding: 0;
+          }
+          }
